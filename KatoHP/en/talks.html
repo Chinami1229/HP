@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <script src="../google_link.txt"></script>
+    <script type="text/javascript">
+     $(function() {
+       var nav = $('.menu');
+       var navTop = nav.offset().top;
+       $(window).scroll(function () {
+	 var winTop = $(this).scrollTop();
+	 if (winTop >= navTop) {
+	   nav.addClass('fixed');
+	   $("body").css("margin-top","86px");
+	 } else if (winTop < navTop) {
+	   nav.removeClass('fixed');
+	   $("body").css("margin-top","0px");
+	 }
+       });
+     });
+    </script>
+
+
+    <link rel="stylesheet" type="text/css" href="../hirai.css" />
+    <title>Presentations</title>
+  </head>
+  <body>
+    <h1>Chinami Kato's Homepage</h1>
+    <nav>
+      <ul id="dropmenu" class="menu">
+	<li><a href="index.html">TOP</a></li>
+	<li><a href="profile.html">About me</a></li>
+	<li><a href="research.html">Research</a>
+	  <ul>
+	    <li><a href="research.html#binary">Pre-supernova neutrinos</a></li>
+	    <li><a href="research.html#numerical">Supernova neutrinos</a></li>
+	  </ul>
+	</li>
+	<li><a href="publications.html">Publications</a>
+	  <ul>
+	    <li><a href="publications.html#first">Leading-author papers</a></li>
+	    <li><a href="publications.html#co">Co-authored papers</a></li>
+	  </ul>
+	</li>
+	<li><a href="talks.html">Presentations</a>
+	  <ul>
+	    <li><a href="talks.html#international">International</a></li>
+	    <li><a href="talks.html#domestic">Domestic</a></li>
+	    <li><a href="talks.html#seminar">Seminars</a></li>
+	    <li><a href="talks.html#ss">Summer schools</a></li>
+	    <li><a href="talks.html#others">Others</a></li>
+	  </ul>
+	</li>
+	<li><a href="research.html">Links</a>
+	  <ul>
+	    <li><a href="http://www.heap.phys.waseda.ac.jp/english/index-e.html" target="_top">Yamada lab</a></li>
+	    <li><a href="http://www.gravity.phys.waseda.ac.jp/" target="_top">Waseda astrophysics group</a></li>
+	    <li><a href="http://www.waseda.jp" target="_top">Waseda University</a></li>
+	  </ul>
+	</li>
+	<li><a href="../talks.html">日本語</a></li>
+      </ul>
+    </nav>
+</div>
+
+<h2 id="international">International Conferences</h2>
+<ul class="talks">
+    <li><a target="_top" href="http://www.heap.phys.waseda.ac.jp/Conference_waseda_2018/index.html">Physics of Core-Collapse Supernovae and Compact Star Formations </a><br>
+        Waseda university, March, 2018, poster, "Pre-SN neutrino emissions in all-flavors from SN progenitors and their detectability" <br>
+      <li><a target="_top" href="https://micra2017.org/"> Microphysics in Computational Relativistic Astrophysics 2017</a><br>
+        East Lansing, USA, July, 2017, poster, "Pre-SN neutrino emissions in all-flavors from SN progenitors and their detectability" <br>
+      </li>
+      <li><a target="_top" href="https://www.iau.org/science/meetings/past/symposia/1162/"> IAUS329:The lives and death-throes of massive stars</a><br>
+        Auckland, New Zealand, November, 2016, poster, "Pre-supernova neutrino emissions from ONe cores in the progenitors of core-collapse supernova" <br>
+      </li>
+      <li><a target="_top" href="https://sites.google.com/site/mraccs2016/home">Many Riddles About Core-Collapse Supernova</a><br>
+	NAOJ, June 2016, poster, "The properties of pre-SN neutrinos and its observational detection～towards the comprehensive supernova neutrino studies" <br>
+      </li>
+      <li><a target="_top" href="http://www.lowbg.org/ugnd/workshop/sympo_all/201605_Tokyo/"> Revealing the history of the universe with underground particle and nuclear research 2016</a><br>
+	Universiy of Tokyo, May, 2016, oral, "Properties of pre-supernova neutrino in collapsing phase～towards comprehensive neutrino studies" <br>
+      </li>
+      <li><a target="_top" href="http://www.heap.phys.waseda.ac.jp/kakenhi/NW2015/">Numazu Workshop</a><br>
+	Numazu, September, 2015, oral, "Pre-supernova neutrino emission from ONe cores in the progenitors of core-collapse supernovae: are they distinguishable from those of Fe cores?"
+    </ul>
+</ul>
+
+<h2 id="domestic">Domestic Conferences</h2>
+<ul class="talks">
+      <li><a target="_top" href="http://www.asj.or.jp/nenkai/archive/2018b/pdf/K14a.pdf">ASJ 2018 Autumn Annual Meeting</a><br>
+	University of Hyogo, September, 2018, oral, "ニュートリノ球内部における核子散乱によるニュートリノスペクトルへの影響" <br>
+      </li>
+      <li><a target="_top" href="http://www.asj.or.jp/nenkai/archive/2017a/pdf/K12a.pdf">ASJ 2017 Spring Annual Meeting</a><br>
+	Kyusyu university, Match, 2017, oral"原子核による前兆ニュートリノ放出" <br>
+      </li>
+      <li><a target="_top" href="http://www.asj.or.jp/nenkai/archive/2016a/pdf/K03a.pdf">ASJ 2016 Spring Annual Meeting</a><br>
+        Tokyo Metropolitan university, March, 2016, oral,"前兆ニュートリノの親星依存性" <br>
+      </li>
+      <li><a target="_top" href="http://w4.gakkai-web.net/jps_search/2015sp/data/html/programu.html">The Physics Society of Japan 2016 Annual meeting</a><br>
+	Waseda university, March, 2015, oral, "超新星前兆ニュートリノの放出率及びその観測可能性" <br>
+      </li>
+      <li><a target="_top" href="http://www.asj.or.jp/nenkai/archive/2015a/pdf/K06a.pdf">ASJ 2015 Spring Anuual Meeting</a><br>
+	Osaka university, March, 2015, oral, "超新星前兆ニュートリノの放出率及びその観測可能性"
+</ul>
+
+
+<h2 id="seminar">Seminars</h2>
+<ul class="talks">
+ 　　　<li>Seminar at Hiroshima university<br>
+	October, 2018, "The evolutions of massive stars and the importance of neutrino observations"</li>
+      <li><a target="_top" href="https://www.kek.jp/ja/Conference/2018/06/28/1530/">Seminar at KEK</a><br>
+	June, 2018, "The evolutions of massive stars and the importance of neutrino observations"</li>
+      <li>Seminar at Tohoku university<br>
+        July, 2017, "全フレーバーの前兆ニュートリノ放出とその観測可能性"</li>
+      <li><a target="_top" href="http://www.icrr.u-tokyo.ac.jp/hea/group_seminar2016.html">Seminar at ICRR</a><br>
+	May, 2016, "前兆ニュートリノの親星依存性とその観測～超新星ニュートリノの包括的な研究へ向けて"</li>
+</ul>
+
+
+<h2 id="ss">Summer Schools</h2>
+<ul class="talks">
+   <li><a target="_top" href="http://www.astro.phys.s.chiba-u.ac.jp/hpci/ss2014/">宇宙磁気流体・プラズマシミュレーションサマースクール</a><br>
+	Chiba university, August, 2018 <br>
+      </li>
+      <li><a target="_top" href="https://www.jicfus.jp/field5/jp/130820-24summerschool/index.html">サマースクール「クォークから超新星爆発まで」</a><br>
+	Yukawa institute at Kyoto university, August, 2013
+</ul>
+
+<h2 id="others">Others</h2>
+<ul class="talks">
+ <li><a target="_top"href="http://www.heap.phys.waseda.ac.jp/Conference_waseda_2018/index.html">Physics of Core-Collapse Supernovae and Compact Star Formations </a><br>
+	早稲田大学, 2018年3月, LOC</li>
+	<li>理工学術院総合研究所　アーリーバードプログラム　若手研究奨励賞受賞</li>
+	<li>理工学術院総合研究所　アーリーバードプログラム　2016年度 若手研究者研究成果報告会　理工研シンポジウム<br>
+	早稲田大学, 2017年3月, 口頭発表 "2016年度アーリーバード活動報告"</li>
+      <li>理工学術院総合研究所　アーリーバードプログラム　2016年度 若手研究者研究成果報告会　理工研シンポジウム<br>
+	早稲田大学, 2017年3月, 口頭＋ポスター発表 "星の中をのぞいてみませんか？～ニュートリノでしか見られない世界へ"</li>
+      <li>理工学術院総合研究所　アーリーバードプログラム　2016年度第一回アーリーバードミーティング<br>
+	早稲田大学, 2016年6月, 口頭発表 "超新星爆発とニュートリノ"</li>
+      <li>第三回 Symposium for Women Researchers<br>
+	東京都立戸山高等学校, 2016年11月, ポスター発表 "超新星爆発前の親星からのニュートリノ放出とその観測可能性"</li>
+</ul>
+
+<div id="bottom">
+
+  <script>
+   <!--
+	  var day = new Date(document.lastModified);
+   var y = day.getFullYear();			// 年を取得
+   var m = day.getMonth() + 1;			// 月を取得
+   var d = day.getDate();				// 日にちを取得
+
+   document.write("Last Update: " + d + "." + m + "." + y );
+   // -->
+  </script>
+</div>
+
+
+  </body>
+</html>

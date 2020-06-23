@@ -1,8 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <script src="../google_link.txt"></script>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="hirai.css" />
+
+    <script src="google_link.txt"></script>
     <script type="text/javascript">
      $(function() {
        var nav = $('.menu');
@@ -11,7 +13,7 @@
 	 var winTop = $(this).scrollTop();
 	 if (winTop >= navTop) {
 	   nav.addClass('fixed');
-	   $("body").css("margin-top","86px");
+	   $("body").css("margin-top","86px");<!-- 86=.menu height 43*2-->
 	 } else if (winTop < navTop) {
 	   nav.removeClass('fixed');
 	   $("body").css("margin-top","0px");
@@ -20,178 +22,185 @@
      });
     </script>
 
-
-    <link rel="stylesheet" type="text/css" href="../hirai.css" />
-    <title>Presentations</title>
+    <title>研究会・学会発表</title>
   </head>
   <body>
-    <h1>Chinami Kato's Homepage</h1>
+    <h1>加藤ちなみのホームページ</h1>
     <nav>
       <ul id="dropmenu" class="menu">
-	<li><a href="index.html">TOP</a></li>
-	<li><a href="profile.html">About me</a></li>
-	<li><a href="research.html">Research</a>
+	<li><a href="index.html">トップ</a></li>
+	<li><a href="profile.html">プロフィール</a></li>
+	<li><a href="research.html">研究内容</a>
 	  <ul>
-	    <li><a href="research.html#binary">Pre-supernova neutrinos</a></li>
-	    <li><a href="research.html#numerical">Supernova neutrinos</a></li>
+	    <li><a href="research.html#binary">前兆ニュートリノ</a></li>
+	    <li><a href="research.html#numerical">超新星ニュートリノ</a></li>
 	  </ul>
 	</li>
-	<li><a href="publications.html">Publications</a>
+	<li><a href="papers.html">投稿論文</a>
 	  <ul>
-	    <li><a href="publications.html#first">Leading-author papers</a></li>
-	    <li><a href="publications.html#co">Co-authored papers</a></li>
+	    <li><a href="papers.html#first">主著論文</a></li>
+	    <li><a href="papers.html#co">共著論文</a></li>
 	  </ul>
 	</li>
-	<li><a href="talks.html">Presentations</a>
+	<li><a href="talks.html">学会・研究会</a>
 	  <ul>
-	    <li><a href="talks.html#international">International</a></li>
-	    <li><a href="talks.html#domestic">Domestic</a></li>
-	    <li><a href="talks.html#seminar">Seminars</a></li>
-	    <li><a href="talks.html#ss">Summer schools</a></li>
-	    <li><a href="talks.html#others">Others</a></li>
+	    <li><a href="talks.html#international">国際研究会</a></li>
+	    <li><a href="talks.html#domestic">国内学会</a></li>
+	    <li><a href="talks.html#workshop">国内研究会</a></li>
+	    <li><a href="talks.html#seminar">セミナー</a></li>
+	    <li><a href="talks.html#ss">サマースクール等</a></li>
+	    <li><a href="talks.html#others">その他</a></li>
 	  </ul>
 	</li>
-	<li><a href="research.html">Links</a>
+	<li><a href="research.html">リンク</a>
 	  <ul>
-	    <li><a href="http://www.heap.phys.waseda.ac.jp/english/index-e.html" target="_top">Yamada lab</a></li>
-	    <li><a href="http://www.gravity.phys.waseda.ac.jp/" target="_top">Waseda astrophysics group</a></li>
-	    <li><a href="http://www.waseda.jp" target="_top">Waseda University</a></li>
+	    <li><a href="http://www.heap.phys.waseda.ac.jp" target="_top">山田研トップ</a></li>
+	    <li><a href="http://www.gravity.phys.waseda.ac.jp/" target="_top">早稲田理論宇宙物理研トップ</a></li>
+	    <li><a href="http://www.waseda.jp" target="_top">早稲田大学トップ</a></li>
 	  </ul>
 	</li>
-	<li><a href="../talks.html">日本語</a></li>
+	<li><a href="en/talks.html">English</a></li>
       </ul>
     </nav>
-</div>
 
-<h2 id="international">International Conferences</h2>
-<ul class="talks">
-      <li><a target="_top" href="https://conferences.fnal.gov/nu2020/"> Neutrino2020 </a><br>
-        online, July, 2020,invited, "Pre-supernova neutrinos" <br>
+    <h2 id="international">国際研究会</h2>
+    <ul class="talks">
+　　　<li><a target="_top" href="https://conferences.fnal.gov/nu2020/"> Neutrino2020 </a><br>
+        オンライン, 2020年6月,招待講演 "Pre-supernova neutrinos" <br>
       </li>
       <li><a target="_top" href="http://taup2019.icrr.u-tokyo.ac.jp/"> TAUP2019 </a><br>
-        Toyama international conference center, September, 2019, oral, "Pre-supernova neutrino emission from massive stars and their detection" <br>
+        富山国際会議場, 2019年9月,口頭発表 "Pre-supernova neutrino emission from massive stars and their detection" <br>
       </li>
       <li><a target="_top" href="https://snews2.0.snolab.ca/"> SNEWS2.0 workshop </a><br>
-        Sudbury, Canada, June, 2019,invited, "The role of Pre-SN neutrinos in multi-messenger astronomy" <br>
+        Sudbury, Canada, 2019年6月,招待講演 "The role of Pre-SN neutrinos in multi-messenger astronomy" <br>
       </li>
       <li><a target="_top" href="http://astro.physics.ncsu.edu/~FOE/"> FOE2019 </a><br>
-        North Carolina, USA, May, 2019, poster, "Effects of nucleon recoils for neutrino spectra in core-collapse supernovae" <br>
+        North Carolina, USA, 2019年5月,ポスター発表"Effects of nucleon recoils for neutrino spectra in core-collapse supernovae" <br>
       </li>
       <li><a target="_top" href="http://www.resceu.s.u-tokyo.ac.jp/getd/RIKEN_RESCEU2019/index_e.php"> RIKEN-RESCEU Joint Seminar </a><br>
-        University of Tokyo, March, 2019, oral, "Effects of nucleon recoils for neutrino spectra in core-collapse supernovae" <br>
+        東京大学, 2019年3月,口頭発表 "Effects of nucleon recoils for neutrino spectra in core-collapse supernovae" <br>
       </li>
       <li><a target="_top" href="http://www.heap.phys.waseda.ac.jp/Conference_waseda_2018/index.html">Physics of Core-Collapse Supernovae and Compact Star Formations </a><br>
-        Waseda university, March, 2018, poster, "Pre-SN neutrino emissions in all-flavors from SN progenitors and their detectability" <br>
+        早稲田大学, 2018年3月,ポスター発表 "Pre-SN neutrino emissions in all-flavors from SN progenitors and their detectability" <br>
+      </li>
       <li><a target="_top" href="https://micra2017.org/"> Microphysics in Computational Relativistic Astrophysics 2017</a><br>
-        East Lansing, USA, July, 2017, poster, "Pre-SN neutrino emissions in all-flavors from SN progenitors and their detectability" <br>
+        East Lansing, USA, 2017年7月,ポスター発表 "Pre-SN neutrino emissions in all-flavors from SN progenitors and their detectability" <br>
       </li>
       <li><a target="_top" href="https://www.iau.org/science/meetings/past/symposia/1162/"> IAUS329:The lives and death-throes of massive stars</a><br>
-        Auckland, New Zealand, November, 2016, poster, "Pre-supernova neutrino emissions from ONe cores in the progenitors of core-collapse supernova" <br>
+        Auckland, New Zealand, 2016年11月,ポスター発表 "Pre-supernova neutrino emissions from ONe cores in the progenitors of core-collapse supernova" <br>
       </li>
       <li><a target="_top" href="https://sites.google.com/site/mraccs2016/home">Many Riddles About Core-Collapse Supernova</a><br>
-	NAOJ, June 2016, poster, "The properties of pre-SN neutrinos and its observational detection～towards the comprehensive supernova neutrino studies" <br>
+	国立天文台, 2016年6月,ポスター発表 "The properties of pre-SN neutrinos and its observational detection～towards the comprehensive supernova neutrino studies" <br>
       </li>
       <li><a target="_top" href="http://www.lowbg.org/ugnd/workshop/sympo_all/201605_Tokyo/"> Revealing the history of the universe with underground particle and nuclear research 2016</a><br>
-	Universiy of Tokyo, May, 2016, oral, "Properties of pre-supernova neutrino in collapsing phase～towards comprehensive neutrino studies" <br>
+	東京大学, 2016年5月, 口頭発表"Properties of pre-supernova neutrino in collapsing phase～towards comprehensive neutrino studies" <br>
       </li>
       <li><a target="_top" href="http://www.heap.phys.waseda.ac.jp/kakenhi/NW2015/">Numazu Workshop</a><br>
-	Numazu, September, 2015, oral, "Pre-supernova neutrino emission from ONe cores in the progenitors of core-collapse supernovae: are they distinguishable from those of Fe cores?"
+	静岡県沼津商工会議所, 2015年9月, 口頭発表"Pre-supernova neutrino emission from ONe cores in the progenitors of core-collapse supernovae: are they distinguishable from those of Fe cores?"
     </ul>
-</ul>
 
-<h2 id="domestic">Japanese Conferences</h2>
-<ul class="talks">
-      <li><a target="_top" href="https://www.lowbg.org/ugap/ws/am2020/index.html?InputContents=Prog"> Scientific Research on Innovative Areas, "Unraveling the History of the Universe and Matter Evolution with Underground Physics" Area Symposium 2020</a><br>
-        online, June, 2020, invited, "ニュートリノ集団振動を考慮した超新星ニュートリノスペクトルの構築" </li>
-      <li><a target="_top" href="https://sites.google.com/view/ugapw2020/home"> Scientific Research on Innovative Areas, "Unraveling the History of the Universe and Matter Evolution with Underground Physics", 1st Conference for Young Researchers</a><br>	
-	University of Tokyo (Kamioka), Januray, 2020, review, "恒星進化と前兆ニュートリノ" </li>
-      <li><a target="_top" href="http://www.lowbg.org/ugap/ws/sn2020/"> Scientific Research on Innovative Areas, "Unraveling the History of the Universe and Matter Evolution with Underground Physics" 6th Supernova Neutrino Conference</a><br>	
-	ICRR, January, 2020, poster, "前兆ニュートリノ観測による恒星物理への制限" </li>
-      <li><a target="_top" href="https://sci.nao.ac.jp/workshops/rironkon19/index.html"> 32nd Rironkon Symposium</a><br>	
-	NAOJ, December, 2019, poster, "前兆ニュートリノ放出に対する恒星進化理論における不定性の影響" </li>
-      <li><a target="_top" href="http://www2.yukawa.kyoto-u.ac.jp/~rironkon2018/index.html"> 31st Rironkon Symposium</a><br>	
-	Kyoto university, December, 2018, oral, "モンテカルロ法を用いたニュートリノ輸送計算" </li>
-      <li><a target="_top" href="http://www.asj.or.jp/nenkai/archive/2018b/pdf/K14a.pdf">ASJ 2018 Autumn Annual Meeting</a><br>
-	University of Hyogo, September, 2018, oral, "ニュートリノ球内部における核子散乱によるニュートリノスペクトルへの影響" <br>
+    <h2 id="domestic">国内学会</h2>
+    <ul class="talks">
+      <li><a target="_top" href="http://www.asj.or.jp/nenkai/archive/2018b/pdf/K14a.pdf">天文学会秋季年会</a><br>
+	兵庫県立大学, 2018年9月, 口頭発表"ニュートリノ球内部における核子散乱によるニュートリノスペクトルへの影響" <br>
       </li>
-      <li><a target="_top" href="http://www.lowbg.org/ugnd/workshop/groupC/sn20170304/">Scientific Research on Innovative Areas, "Revealing the history of the universe with underground particle and nuclear research", 3rd Supernova Neutrino Conference</a><br>	
-	Tohoku university, March, 2017, oral, "原子核による前兆ニュートリノ放出" </li>
-      <li><a target="_top" href="http://www.icehap.chiba-u.jp/activity/170302multimessenger.html">Multi-messenger Conference</a><br>
-        Chiba university, March, 2017, oral, "超新星爆発へ向けた親星からの予兆～前兆ニュートリノの放出と観測可能性" </li>
-      <li><a target="_top" href="http://www.asj.or.jp/nenkai/archive/2017a/pdf/K12a.pdf">ASJ 2017 Spring Annual Meeting</a><br>
-	Kyusyu university, March, 2017, oral"原子核による前兆ニュートリノ放出" <br>
+      <li><a target="_top" href="http://www.asj.or.jp/nenkai/archive/2017a/pdf/K12a.pdf">天文学会春季年会</a><br>
+	九州大学, 2017年3月, 口頭発表"原子核による前兆ニュートリノ放出" <br>
       </li>
-      <li><a target="_top" href="https://www.astr.tohoku.ac.jp/rironkon2016/index.html"> 29th Rironkon Symposium</a><br>
-	Tohoku university, December, 2016, poster, "原子核による前兆ニュートリノ放出とその観測可能性"</li>
-      <li><a target="_top" href="http://www.asj.or.jp/nenkai/archive/2016a/pdf/K03a.pdf">ASJ 2016 Spring Annual Meeting</a><br>
-        Tokyo Metropolitan university, March, 2016, oral,"前兆ニュートリノの親星依存性" <br>
+      <li><a target="_top" href="http://www.asj.or.jp/nenkai/archive/2016a/pdf/K03a.pdf">天文学会春季年会</a><br>
+	首都大学東京, 2016年3月, 口頭発表"前兆ニュートリノの親星依存性" <br>
       </li>
-      <li><a target="_top" href="http://www.lowbg.org/ugnd/workshop/sympo_all/201505_Kobe/">Scientific Research on Innovative Areas, "Revealing the history of the universe with underground particle and nuclear research" Area Symposium</a><br>
-	Kobe university, May, 2015, poster, "超新星前兆ニュートリノによる親星モデルの判別可能性"</li>
-      <li><a target="_top" href="http://w4.gakkai-web.net/jps_search/2015sp/data/html/programu.html">The Physics Society of Japan 2016 Annual meeting</a><br>
-	Waseda university, March, 2015, oral, "超新星前兆ニュートリノの放出率及びその観測可能性" <br>
+      <li><a target="_top" href="http://w4.gakkai-web.net/jps_search/2015sp/data/html/programu.html">日本物理学会</a><br>
+	早稲田大学, 2015年3月, 口頭発表"超新星前兆ニュートリノの放出率及びその観測可能性" <br>
       </li>
-      <li><a target="_top" href="http://www.asj.or.jp/nenkai/archive/2015a/pdf/K06a.pdf">ASJ 2015 Spring Anuual Meeting</a><br>
-	Osaka university, March, 2015, oral, "超新星前兆ニュートリノの放出率及びその観測可能性"
-      <li><a target="_top" href="http://www.lowbg.org/ugnd/workshop/groupC/sn20150316/">Scientific Research on Innovative Areas, "Revealing the history of the universe with underground particle and nuclear research", 1st Supernova Neutrino Conference</a><br>
-	Tokyo university of science, March, 2015, oral,"Progenitor modelによる前兆ニュートリノ放出率の違いと観測可能性"</li>
-</ul>
+      <li><a target="_top" href="http://www.asj.or.jp/nenkai/archive/2015a/pdf/K06a.pdf">天文学会春季年会</a><br>
+	大阪大学, 2015年3月, 口頭発表"超新星前兆ニュートリノの放出率及びその観測可能性"
+    </ul>
+
+    <h2 id="workshop">国内研究会</h2>
+    <ul class="talks">
+　　　　<li><a target="_top" href="https://www.lowbg.org/ugap/ws/am2020/index.html?InputContents=Prog"> 2020年度地下宇宙領域研究会 </a><br>
+        オンライン, 2020年6月, 招待講演 "ニュートリノ集団振動を考慮した超新星ニュートリノスペクトルの構築"</li>
+        <li><a target="_top" href="https://sites.google.com/view/ugapw2020/home"> 新学術「地下から解き明かす宇宙の歴史と物質の進化」第一回地下宇宙若手研究会</a><br>	
+	神岡宇宙素粒子研究施設, 2020年2月, 基調講演"恒星進化と前兆ニュートリノ" </li>
+        <li><a target="_top" href="http://www.lowbg.org/ugap/ws/sn2020/"> 新学術「地下から解き明かす宇宙の歴史と物質の進化」第六回超新星ニュートリノ研究会</a><br>	
+	宇宙線研究所, 2020年1月, ポスター発表"前兆ニュートリノ観測による恒星物理への制限" </li>
+        <li><a target="_top" href="https://sci.nao.ac.jp/workshops/rironkon19/index.html"> 理論懇シンポジウム</a><br>	
+	国立天文台, 2019年12月, ポスター発表"前兆ニュートリノ放出に対する恒星進化理論における不定性の影響" </li>
+        <li><a target="_top" href="http://www2.yukawa.kyoto-u.ac.jp/~rironkon2018/index.html"> 理論懇シンポジウム</a><br>	
+	京都大学, 2018年12月, 口頭発表"モンテカルロ法を用いたニュートリノ輸送計算" </li>
+	<li><a target="_top" href="http://www.lowbg.org/ugnd/workshop/groupC/sn20170304/">新学術「宇宙の歴史をひもとく地下素粒子原子核研究」第三回超新星ニュートリノ研究会</a><br>	
+	東北大学, 2017年3月, 口頭発表"原子核による前兆ニュートリノ放出" </li>
+	<li><a target="_top" href="http://www.icehap.chiba-u.jp/activity/170302multimessenger.html">マルチメッセンジャー研究会</a><br>
+        千葉大学, 2017年3月, 口頭発表"超新星爆発へ向けた親星からの予兆～前兆ニュートリノの放出と観測可能性" </li>
+	<li><a target="_top" href="https://www.astr.tohoku.ac.jp/rironkon2016/index.html">理論懇シンポジウム</a><br>
+	東北大学, 2016年12月, ポスター発表"原子核による前兆ニュートリノ放出とその観測可能性"</li>
+	<li><a target="_top" href="http://astro-wakate.sakura.ne.jp/ss2015/web/">第45回　天文・天体物理若手　夏の学校</a><br>
+	長野県信州・戸倉上山田温泉, 2015年7月, 口頭発表"前兆ニュートリノによる超新星爆発の親星の判別可能性" </li>
+	<li><a target="_top" href="http://www.lowbg.org/ugnd/workshop/sympo_all/201505_Kobe/">新学術「宇宙の歴史をひもとく地下素粒子原子核研究」領域研究会</a><br>
+	神戸大学, 2015年5月, ポスター発表"超新星前兆ニュートリノによる親星モデルの判別可能性"</li>
+        <li><a target="_top" href="http://www.lowbg.org/ugnd/workshop/groupC/sn20150316/">新学術「宇宙の歴史をひもとく地下素粒子原子核研究」第一回超新星ニュートリノ研究会</a><br>
+	東京理科大学, 2015年3月, 口頭発表"Progenitor modelによる前兆ニュートリノ放出率の違いと観測可能性"</li>
+	<li><a target="_top" href="http://astro-wakate.sakura.ne.jp/ss2014/web/">第44回 天文・天体物理若手　夏の学校</a><br>
+	長野県信州・戸倉上山田温泉, 2014年7月, ポスター発表"超新星前の親星からのニュートリノ放出とその観測可能性"</li>	
+    </ul>
+
+    <h2 id="seminar">セミナー</h2>
+    <ul class="talks">
+      <li>RESCEUセミナー<br>
+	東京大学, 2019年4月, "Pre-SN neutrino emissions from massive stars"</li>
+      <li>広島大学セミナー<br>
+	広島大学, 2018年10月, "The evolutions of massive stars and the importance of neutrino observations"</li>
+      <li><a target="_top" href="https://www.kek.jp/ja/Conference/2018/06/28/1530/">KEKセミナー</a><br>
+	高エネルギー加速器研究機構, 2018年6月, "The evolutions of massive stars and the importance of neutrino observations"</li>
+      <li>東北大セミナー<br>
+	東北大学, 2017年7月, "全フレーバーの前兆ニュートリノ放出とその観測可能性"</li>
+      <li><a target="_top" href="http://www.icrr.u-tokyo.ac.jp/hea/group_seminar2016.html">宇宙線研セミナー</a><br>
+	宇宙線研究所, 2016年5月, "前兆ニュートリノの親星依存性とその観測～超新星ニュートリノの包括的な研究へ向けて"</li>
+    </ul>
 
 
-<h2 id="seminar">Seminars</h2>
-<ul class="talks">
- 　　　<li>Seminar at Hiroshima university<br>
-	October, 2018, "The evolutions of massive stars and the importance of neutrino observations"</li>
-      <li><a target="_top" href="https://www.kek.jp/ja/Conference/2018/06/28/1530/">Seminar at KEK</a><br>
-	June, 2018, "The evolutions of massive stars and the importance of neutrino observations"</li>
-      <li>Seminar at Tohoku university<br>
-        July, 2017, "全フレーバーの前兆ニュートリノ放出とその観測可能性"</li>
-      <li><a target="_top" href="http://www.icrr.u-tokyo.ac.jp/hea/group_seminar2016.html">Seminar at ICRR</a><br>
-	May, 2016, "前兆ニュートリノの親星依存性とその観測～超新星ニュートリノの包括的な研究へ向けて"</li>
-</ul>
-
-
-<h2 id="ss">Summer Schools</h2>
-<ul class="talks">
-   <li><a target="_top" href="http://www.astro.phys.s.chiba-u.ac.jp/hpci/ss2014/">Astrophysical MHD/Plasma Simulation Summer School</a><br>
-	Chiba university, August, 2018 <br>
+    <h2 id="ss">サマースクール等</h2>
+    <ul class="talks">
+      <li><a target="_top" href="http://www.astro.phys.s.chiba-u.ac.jp/hpci/ss2014/">宇宙磁気流体・プラズマシミュレーションサマースクール</a><br>
+	千葉大学, 2014年8月 <br>
       </li>
-      <li><a target="_top" href="https://www.jicfus.jp/field5/jp/130820-24summerschool/index.html">Summer School "From Quarks to Supernovae"</a><br>
-	Yukawa institute at Kyoto university, August, 2013
-</ul>
+      <li><a target="_top" href="https://www.jicfus.jp/field5/jp/130820-24summerschool/index.html">サマースクール「クォークから超新星爆発まで」</a><br>
+	京大基礎物理学研究所, 2013年8月
+    </ul>
 
-<h2 id="others">Others</h2>
-<ul class="talks">
-      <li><a target="_top"href="http://www.asj.or.jp/geppou/contents/2020_01.html"> The Astronomical Herald </a><br>
-	January, 2020, "大質量星からの前兆ニュートリノ放出とその観測の重要性"</li>
-      <li><a target="_top"href="http://cafe.tohoku.ac.jp/cafe/manufacturing/191129.html"> 170th Tohoku University Science Cafe </a><br>
-	Sendai Mediatheque, November, 2019, MC</li>
+    <h2 id="others">その他</h2>
+    <ul class="talks">
+      <li><a target="_top"href="http://www.asj.or.jp/geppou/contents/2020_01.html"> 天文月報 </a><br>
+	2020年1月号, "大質量星からの前兆ニュートリノ放出とその観測の重要性"</li>
+      <li><a target="_top"href="http://cafe.tohoku.ac.jp/cafe/manufacturing/191129.html"> 第170回東北大学サイエンスカフェ </a><br>
+	せんだいメディアテーク, 2019年11月，司会</li>
       <li><a target="_top"href="http://www.heap.phys.waseda.ac.jp/Conference_waseda_2018/index.html">Physics of Core-Collapse Supernovae and Compact Star Formations </a><br>
-	Waseda University, March, 2018, LOC</li>
-      <li>Waseda University Early Bird Program, Young Researcher Encouragement Award</li>
-      <li>Early Bird Program, Achievements Report Meeting<br>
-	Waseda University, March, 2017, oral, "2016年度アーリーバード活動報告"</li>
-      <li>Early Bird Program, Achievements Report Meeting<br>
-	Waseda University, March, 2017, oral+poster, "星の中をのぞいてみませんか？～ニュートリノでしか見られない世界へ"</li>
-      <li>Early Bird Program, 1st Bird Meeting<br>
-	Waseda University, June, 2017, oral, "超新星爆発とニュートリノ"</li>
-      <li>3rd Symposium for Women Researchers<br>
-	Toyama High School, November, 2016, poster, "超新星爆発前の親星からのニュートリノ放出とその観測可能性"</li>
-</ul>
+	早稲田大学, 2018年3月, LOC</li>
+	<li>理工学術院総合研究所　アーリーバードプログラム　若手研究奨励賞受賞</li>
+	<li>理工学術院総合研究所　アーリーバードプログラム　2016年度 若手研究者研究成果報告会　理工研シンポジウム<br>
+	早稲田大学, 2017年3月, 口頭発表 "2016年度アーリーバード活動報告"</li>
+      <li>理工学術院総合研究所　アーリーバードプログラム　2016年度 若手研究者研究成果報告会　理工研シンポジウム<br>
+	早稲田大学, 2017年3月, 口頭＋ポスター発表 "星の中をのぞいてみませんか？～ニュートリノでしか見られない世界へ"</li>
+      <li>理工学術院総合研究所　アーリーバードプログラム　2016年度第一回アーリーバードミーティング<br>
+	早稲田大学, 2016年6月, 口頭発表 "超新星爆発とニュートリノ"</li>
+      <li>第三回 Symposium for Women Researchers<br>
+	東京都立戸山高等学校, 2016年11月, ポスター発表 "超新星爆発前の親星からのニュートリノ放出とその観測可能性"</li>
+    </ul>
 
-<div id="bottom">
+    <div id="bottom">
 
-  <script>
-   <!--
-	  var day = new Date(document.lastModified);
-   var y = day.getFullYear();			// 年を取得
-   var m = day.getMonth() + 1;			// 月を取得
-   var d = day.getDate();				// 日にちを取得
+      <script>
+       <!--
+	      var day = new Date(document.lastModified);
+       var y = day.getFullYear();			// 年を取得
+       var m = day.getMonth() + 1;			// 月を取得
+       var d = day.getDate();				// 日にちを取得
 
-   document.write("Last Update: " + d + "." + m + "." + y );
-   // -->
-  </script>
-</div>
+       document.write("最終更新日: " + y + "年" + m + "月" + d + "日");
+       // -->
+      </script>
+    </div>
 
 
   </body>
